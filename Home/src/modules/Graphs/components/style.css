@@ -1,0 +1,29 @@
+.dittofi-graph-container {
+    width: 100%;
+    height: 100%;
+    min-width: 340px;
+    position: relative;
+}
+
+/*.dittofi-graph-container > .react-stockchart*/
+/*{*/
+/*    width: 100% !important;*/
+/*    display: flex;*/
+/*    align-items: flex-start;*/
+/*    justify-content: flex-start;*/
+/*    position: relative !important;*/
+/*}*/
+
+/*.dittofi-graph-container .react-stockchart svg {*/
+/*    width: 100% !important;*/
+/*    position: relative !important;*/
+/*}*/
+
+.react-stockchart g {
+    clip-path: unset !important;
+}
+
+.dittofi-graph-container-canvas .react-stockchart g {
+    clip-path: unset !important;
+    /*width: 100% !important;*/
+}

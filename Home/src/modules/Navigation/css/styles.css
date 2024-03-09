@@ -1,0 +1,218 @@
+/* Navbar */
+.df-nav-bar {
+    position: relative;
+    background: #dddddd;
+    z-index: 1000;
+}
+
+.df-nav-bar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Navbar menu */
+.df-nav-menu {
+    position: relative;
+    float: right;
+    display: flex;
+}
+
+/* Navbar toggler */
+.df-nav-toggler {
+    position: relative;
+    float: right;
+    padding: 15px;
+    display: none;
+    cursor: pointer;
+}
+
+.df-nav-toggler div {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+/* Navbar overlay */
+.df-nav-overlay {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+/* Collapse navbar always */
+.df-nav-bar-xl .df-nav-menu {
+    display: none;
+}
+
+.df-nav-bar-xl .df-nav-toggler {
+    display: block;
+}
+
+.df-nav-bar-xl .df-nav-menu .df-nav-item {
+    display: block;
+}
+
+.df-nav-bar-xl .df-nav-menu.open {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #C8C8C8;
+    overflow: visible;
+    min-width: 200px;
+}
+
+.df-nav-bar-xl .df-nav-menu.open.left, .df-nav-bar-xl .df-nav-menu.open.right {
+    position: fixed;
+    bottom: 0;
+}
+
+.df-nav-bar-xl .df-nav-menu.open.left {
+    right: auto;
+    z-index: 1;
+    top: 0;
+}
+
+.df-nav-bar-xl .df-nav-menu.open.right {
+    left: auto;
+    z-index: 1;
+    top: 0;
+}
+
+/* Collapse navbar on tablets */
+@media (max-width: 992px) {
+    .df-nav-bar-lg .df-nav-menu {
+        display: none;
+    }
+
+    .df-nav-bar-lg .df-nav-toggler {
+        display: block;
+    }
+
+    .df-nav-bar-lg .df-nav-menu .df-nav-item {
+        display: block;
+    }
+
+    .df-nav-bar-lg .df-nav-menu.open {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #C8C8C8;
+        overflow: visible;
+        min-width: 200px;
+    }
+
+    .df-nav-bar-lg .df-nav-menu.open.left, .df-nav-bar-lg .df-nav-menu.open.right {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .df-nav-bar-lg .df-nav-menu.open.left {
+        right: auto;
+        z-index: 1;
+        top: 0;
+    }
+
+    .df-nav-bar-lg .df-nav-menu.open.right {
+        left: auto;
+        z-index: 1;
+        top: 0;
+    }
+}
+
+/* Collapse navbar on large mobiles */
+@media (max-width: 768px) {
+    .df-nav-bar-md .df-nav-menu {
+        display: none;
+    }
+
+    .df-nav-bar-md .df-nav-toggler {
+        display: block;
+    }
+
+    .df-nav-bar-md .df-nav-menu .df-nav-item {
+        display: block;
+    }
+
+    .df-nav-bar-md .df-nav-menu.open {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #C8C8C8;
+        overflow: visible;
+        min-width: 200px;
+    }
+
+    .df-nav-bar-md .df-nav-menu.open.left, .df-nav-bar-md .df-nav-menu.open.right {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .df-nav-bar-md .df-nav-menu.open.left {
+        right: auto;
+        z-index: 1;
+        top: 0;
+    }
+
+    .df-nav-bar-md .df-nav-menu.open.right {
+        left: auto;
+        z-index: 1;
+        top: 0;
+    }
+}
+
+/* Collapse navbar on small mobiles */
+@media (max-width: 576px) {
+    .df-nav-bar-sm .df-nav-menu {
+        display: none;
+    }
+
+    .df-nav-bar-sm .df-nav-toggler {
+        display: block;
+    }
+
+    .df-nav-bar-sm .df-nav-menu .df-nav-item {
+        display: block;
+    }
+
+    .df-nav-bar-sm .df-nav-menu.open {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #C8C8C8;
+        overflow: visible;
+        min-width: 200px;
+    }
+
+    .df-nav-bar-sm .df-nav-menu.open.left, .df-nav-bar-sm .df-nav-menu.open.right {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .df-nav-bar-sm .df-nav-menu.open.left {
+        right: auto;
+        z-index: 1;
+        top: 0;
+    }
+
+    .df-nav-bar-sm .df-nav-menu.open.right {
+        left: auto;
+        z-index: 1;
+        top: 0;
+    }
+}
